@@ -8,25 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		F73EC6B5283F909F00662D22 /* ContactListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6B4283F909F00662D22 /* ContactListApp.swift */; };
-		F73EC6B7283F909F00662D22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6B6283F909F00662D22 /* ContentView.swift */; };
 		F73EC6B9283F90A000662D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73EC6B8283F90A000662D22 /* Assets.xcassets */; };
 		F73EC6BC283F90A000662D22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73EC6BB283F90A000662D22 /* Preview Assets.xcassets */; };
 		F73EC6BE283F90A000662D22 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6BD283F90A000662D22 /* Persistence.swift */; };
 		F73EC6C1283F90A000662D22 /* ContactList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6BF283F90A000662D22 /* ContactList.xcdatamodeld */; };
 		F73EC6C8283F94A000662D22 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6C7283F94A000662D22 /* Person.swift */; };
 		F73EC6CA283F94A600662D22 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6C9283F94A600662D22 /* DataManager.swift */; };
+		F73EC6CE283FC0AF00662D22 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6CD283FC0AF00662D22 /* ContactDetailView.swift */; };
+		F73EC6D0283FC4C100662D22 /* NumbersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6CF283FC4C100662D22 /* NumbersListView.swift */; };
+		F73EC6D2283FC58A00662D22 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6D1283FC58A00662D22 /* ContactListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F73EC6B1283F909F00662D22 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73EC6B4283F909F00662D22 /* ContactListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListApp.swift; sourceTree = "<group>"; };
-		F73EC6B6283F909F00662D22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F73EC6B8283F90A000662D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73EC6BB283F90A000662D22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F73EC6BD283F90A000662D22 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F73EC6C0283F90A000662D22 /* ContactList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactList.xcdatamodel; sourceTree = "<group>"; };
 		F73EC6C7283F94A000662D22 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		F73EC6C9283F94A600662D22 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F73EC6CD283FC0AF00662D22 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		F73EC6CF283FC4C100662D22 /* NumbersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersListView.swift; sourceTree = "<group>"; };
+		F73EC6D1283FC58A00662D22 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,9 @@
 				F73EC6B4283F909F00662D22 /* ContactListApp.swift */,
 				F73EC6C7283F94A000662D22 /* Person.swift */,
 				F73EC6C9283F94A600662D22 /* DataManager.swift */,
-				F73EC6B6283F909F00662D22 /* ContentView.swift */,
+				F73EC6CF283FC4C100662D22 /* NumbersListView.swift */,
+				F73EC6D1283FC58A00662D22 /* ContactListView.swift */,
+				F73EC6CD283FC0AF00662D22 /* ContactDetailView.swift */,
 				F73EC6B8283F90A000662D22 /* Assets.xcassets */,
 				F73EC6BD283F90A000662D22 /* Persistence.swift */,
 				F73EC6BF283F90A000662D22 /* ContactList.xcdatamodeld */,
@@ -150,10 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F73EC6C8283F94A000662D22 /* Person.swift in Sources */,
+				F73EC6CE283FC0AF00662D22 /* ContactDetailView.swift in Sources */,
+				F73EC6D0283FC4C100662D22 /* NumbersListView.swift in Sources */,
+				F73EC6D2283FC58A00662D22 /* ContactListView.swift in Sources */,
 				F73EC6CA283F94A600662D22 /* DataManager.swift in Sources */,
 				F73EC6C1283F90A000662D22 /* ContactList.xcdatamodeld in Sources */,
 				F73EC6BE283F90A000662D22 /* Persistence.swift in Sources */,
-				F73EC6B7283F909F00662D22 /* ContentView.swift in Sources */,
 				F73EC6B5283F909F00662D22 /* ContactListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +297,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,7 +309,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,6 +327,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +339,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
