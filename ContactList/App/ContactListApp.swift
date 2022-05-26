@@ -12,7 +12,7 @@ struct ContactListApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContactListView()
+            StartView()
         }
     }
 }

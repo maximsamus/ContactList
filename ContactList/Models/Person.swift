@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Person {
-    
+struct Person: Hashable {
+
     let name: String
     let surname: String
     let email: String

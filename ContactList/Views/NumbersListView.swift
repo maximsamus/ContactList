@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct NumbersListView: View {
+    let contacts: [Person]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(systemName: "person.fill")
+                .resizable()
+            .frame(width: 250, height: 250)
+            Spacer()
+        }
     }
 }
 
 struct NumbersListView_Previews: PreviewProvider {
     static var previews: some View {
-        NumbersListView()
+        NumbersListView(contacts: Person.getContactList())
     }
 }
