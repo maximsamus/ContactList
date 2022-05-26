@@ -29,7 +29,7 @@ struct StartView: View {
     }
 }
 
-struct StartView_Previews: PreviewProvider {
+struct StartViewPreviews: PreviewProvider {
     static var previews: some View {
         StartView()
     }

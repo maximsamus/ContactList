@@ -9,24 +9,18 @@ import SwiftUI
 
 struct ContactListView: View {
     let contacts: [Person]
-
+    
     var body: some View {
-//        VStack {
-//            Text("Contact List:")
-//                .font(.largeTitle)
-//                .multilineTextAlignment(.leading)
-//
-            List(contacts, id: \.self) { contact in
+        List(contacts, id: \.self) { contact in
+            NavigationLink(destination: ContactDetailView(contact: contact)) {
                 Text("\(contact.fullName)")
-//            }
-
+            }
         }
-            .listStyle(.plain)
-            .navigationTitle("Contact List")
+        .listStyle(.plain)
     }
 }
 
-struct ContactListView_Previews: PreviewProvider {
+struct ContactListViewPreviews: PreviewProvider {
     static var previews: some View {
         ContactListView(contacts: Person.getContactList())
     }

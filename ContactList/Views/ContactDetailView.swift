@@ -8,16 +8,42 @@
 import SwiftUI
 
 struct ContactDetailView: View {
+    let contact: Person
+    
     var body: some View {
-        Image(systemName: "person.fill")
-            .resizable()
-            .frame(width: 200, height: 200, alignment: .top)
-        Spacer()
+        List {
+            VStack {
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .padding()
+                HStack {
+                    Image(systemName: "phone")
+                        .foregroundColor(.blue)
+                    Text(contact.phoneNumber)
+                }
+                HStack {
+                    Image(systemName: "tray")
+                        .foregroundColor(.blue)
+                    Text(contact.email)
+                }
+                Spacer()
+                    .navigationTitle(contact.fullName)
+                
+            }
+            //            .listStyle(.grouped)
+        }
     }
 }
 
-struct ContactDetailView_Previews: PreviewProvider {
+struct ContactDetailViewPreviews: PreviewProvider {
     static var previews: some View {
-        ContactDetailView()
+        ContactDetailView(contact: Person(
+            name: "",
+            surname: "",
+            email: "",
+            phoneNumber: ""
+        )
+        )
     }
 }

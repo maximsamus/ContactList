@@ -9,18 +9,18 @@ import SwiftUI
 
 struct NumbersListView: View {
     let contacts: [Person]
-
+    
     var body: some View {
         VStack {
             Image(systemName: "person.fill")
                 .resizable()
-            .frame(width: 250, height: 250)
+                .frame(width: 250, height: 250)
             Spacer()
         }
     }
 }
 
-struct NumbersListView_Previews: PreviewProvider {
+struct NumbersListViewPreviews: PreviewProvider {
     static var previews: some View {
         NumbersListView(contacts: Person.getContactList())
     }
