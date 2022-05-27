@@ -15,13 +15,13 @@ struct StartView: View {
             TabView {
                 ContactListView(contacts: contacts)
                     .tabItem {
-                        Image(systemName: "person")
-                        Text("Home")
+                        Image(systemName: "person.3.fill")
+                        Text("Contacts")
                     }
                 NumbersListView(contacts: contacts)
                     .tabItem {
                         Image(systemName: "phone")
-                        Text("Contacts")
+                        Text("Numbers")
                     }
             }
             .navigationTitle("Contact List")
