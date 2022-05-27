@@ -11,27 +11,26 @@ struct ContactDetailView: View {
     let contact: Person
     
     var body: some View {
-        List {
-            VStack {
+        List() {
+            HStack {
+                Spacer()
                 Image(systemName: "person.fill")
                     .resizable()
                     .frame(width: 150, height: 150)
                     .padding()
-                HStack {
-                    Image(systemName: "phone")
-                        .foregroundColor(.blue)
-                    Text(contact.phoneNumber)
-                }
-                HStack {
-                    Image(systemName: "tray")
-                        .foregroundColor(.blue)
-                    Text(contact.email)
-                }
                 Spacer()
-                    .navigationTitle(contact.fullName)
-                
             }
-            //            .listStyle(.grouped)
+            
+            DetailedCell(
+                systemName: "phone",
+                text: contact.phoneNumber
+            )
+            DetailedCell(
+                systemName: "tray",
+                text: contact.email
+            )
+            
+                .navigationTitle(contact.fullName)
         }
     }
 }
@@ -45,5 +44,19 @@ struct ContactDetailViewPreviews: PreviewProvider {
             phoneNumber: ""
         )
         )
+    }
+}
+extension ContactDetailView {
+    struct DetailedCell: View {
+        let systemName: String
+        let text: String
+        
+        var body: some View {
+            HStack {
+                Image(systemName: systemName)
+                    .foregroundColor(.blue)
+                Text(text)
+            }
+        }
     }
 }
