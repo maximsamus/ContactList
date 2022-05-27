@@ -20,17 +20,15 @@ struct ContactDetailView: View {
                     .padding()
                 Spacer()
             }
-            
-            DetailedCell(
+            DetailedCellView(
                 systemName: "phone",
                 text: contact.phoneNumber
             )
-            DetailedCell(
+            DetailedCellView(
                 systemName: "tray",
                 text: contact.email
             )
-            
-                .navigationTitle(contact.fullName)
+            .navigationTitle(contact.fullName)
         }
     }
 }
@@ -44,19 +42,5 @@ struct ContactDetailViewPreviews: PreviewProvider {
             phoneNumber: ""
         )
         )
-    }
-}
-extension ContactDetailView {
-    struct DetailedCell: View {
-        let systemName: String
-        let text: String
-        
-        var body: some View {
-            HStack {
-                Image(systemName: systemName)
-                    .foregroundColor(.blue)
-                Text(text)
-            }
-        }
     }
 }

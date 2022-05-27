@@ -18,6 +18,7 @@
 		F73EC6D0283FC4C100662D22 /* NumbersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6CF283FC4C100662D22 /* NumbersListView.swift */; };
 		F73EC6D2283FC58A00662D22 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6D1283FC58A00662D22 /* ContactListView.swift */; };
 		F73EC6D6283FE9F400662D22 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73EC6D5283FE9F400662D22 /* StartView.swift */; };
+		F7E597A42840FEC600BADACE /* DetailedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E597A32840FEC600BADACE /* DetailedCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		F73EC6CF283FC4C100662D22 /* NumbersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersListView.swift; sourceTree = "<group>"; };
 		F73EC6D1283FC58A00662D22 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		F73EC6D5283FE9F400662D22 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		F7E597A32840FEC600BADACE /* DetailedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				F73EC6CD283FC0AF00662D22 /* ContactDetailView.swift */,
 				F73EC6D5283FE9F400662D22 /* StartView.swift */,
+				F7E597A32840FEC600BADACE /* DetailedCellView.swift */,
 				F73EC6D1283FC58A00662D22 /* ContactListView.swift */,
 				F73EC6CF283FC4C100662D22 /* NumbersListView.swift */,
 			);
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E597A42840FEC600BADACE /* DetailedCellView.swift in Sources */,
 				F73EC6D6283FE9F400662D22 /* StartView.swift in Sources */,
 				F73EC6C8283F94A000662D22 /* Person.swift in Sources */,
 				F73EC6CE283FC0AF00662D22 /* ContactDetailView.swift in Sources */,

@@ -11,17 +11,25 @@ struct NumbersListView: View {
     let contacts: [Person]
     
     var body: some View {
-        VStack {
-            Image(systemName: "person.fill")
-                .resizable()
-                .frame(width: 250, height: 250)
-            Spacer()
+        List(contacts, id: \.self) { contact in
+            Section {
+                DetailedCellView(
+                    systemName: "phone",
+                    text: contact.phoneNumber
+                )
+                DetailedCellView(
+                    systemName: "tray",
+                    text: contact.email
+                )
+            } header: {
+                Text(contact.fullName)
+            }
         }
     }
-}
-
-struct NumbersListViewPreviews: PreviewProvider {
-    static var previews: some View {
-        NumbersListView(contacts: Person.getContactList())
+    
+    struct NumbersListViewPreviews: PreviewProvider {
+        static var previews: some View {
+            NumbersListView(contacts: Person.getContactList())
+        }
     }
 }
