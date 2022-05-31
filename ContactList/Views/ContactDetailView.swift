@@ -35,12 +35,6 @@ struct ContactDetailView: View {
 
 struct ContactDetailViewPreviews: PreviewProvider {
     static var previews: some View {
-        ContactDetailView(contact: Person(
-            name: "",
-            surname: "",
-            email: "",
-            phoneNumber: ""
-        )
-        )
+        ContactDetailView(contact: Person.getContactList().first!)
     }
 }
